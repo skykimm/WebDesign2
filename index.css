@@ -21,7 +21,11 @@ a:link, a:visited{
     width:1200px;
     height: auto;
     margin: 0 auto;
-    border: 1px solid red;
+}
+.wrapper::after{
+    content:"";
+    display:block;
+    clear:both;
 }
 
 .header{
@@ -45,6 +49,7 @@ a:link, a:visited{
     height: 100%;
     line-height: 80px;
     float: right;
+    position:relative;
 }
 .header_right a{
     width:20%;
@@ -92,6 +97,7 @@ a:link, a:visited{
     float: left;
     background: #eee;
     position: relative;
+    margin-top: 20px;
 /*    border: 1px solid red;*/
 }
 .box1{
@@ -126,9 +132,130 @@ a:link, a:visited{
     display: inline-block;
 }
 .img2{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     position: absolute;
-    top: 30%;
-    right: 10%;
+    top: 20%;
+    right: 5%;
+}
+.section_img{
+    width: 1200px;
+    height: auto;
+    margin-top: 10px;
+}
+.section_img .h{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px;
+    display:inline-block;
+}
+.section_img .sub{
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    color: gray;
+}
+.imgbox{
+    width: 1200px;
+    height: auto;
+}
+.imgboxs{
+    width: 370px;
+    height: auto;
+    float: left;
+    position:relative;
+    margin-bottom: 20px;
+}
+.boxsimg{
+    width: 100%;
+    height: 100%;
+}
+.imgleft{
+    margin-right: 45px;
+}
+.imgright{
+    float: right;
+}
+.imgboxs p:nth-child(2){
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+.imgboxs p:nth-child(3){
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+}
+.imgboxs span{
+    font-size: 14px;
+    color:gray;
+}
+.boximg{
+    position:absolute;
+    top: 90%;
+    right:0;
+}
+
+.footer{
+    clear:both;
+    width: 1200px;
+    height: 150px;
+    background: #222;
+}
+.footleft{
+    width:600px;
+    height: 100%;
+    float: left;
+}
+.footleft img{
+    width: 200px;
+    height: 80px;
+    margin: 20px 0 0 100px;
+}
+.footright{
+    width:600px;
+    height: 100%;
+    float: left;
+}
+.footright a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 20px 20px 10px 0;
+}
+.footright p{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1;
+    color: #bbb;
+}
+.list{
+    width: 1200px;
+    height: 0;
+    position:absolute;
+    top: 100%;
+    right:0;
+    z-index: 999;
+    background:black;
+    color:#fff;
+    transition:0.5s;
+    overflow: hidden;
+    
+}
+.list ul{
+    display: inline-block;
+    width: 720px;
+    float: right;
+}
+.list li{
+    width: 20%;
+    list-style: none;
+    display:inline-block;
+    float: left;
+    line-height: 2.5;
+    text-align:right;
+}
+.hover:hover .list{
+    height: 200px;
 }
